@@ -1,0 +1,59 @@
+@media all and (min-width: 720px) and (max-width: 1365px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem; }
+  .home {
+    padding-top: 8rem;
+    min-height: 100vh;
+    text-align: center;
+    color: #000; }
+    .home__name {
+      margin: 1rem;
+      font-size: 4rem; }
+    .home__jobtitle {
+      margin: 0;
+      font-size: 2rem;
+      padding-bottom: 3rem; }
+  .about {
+    padding-top: 20%; }
+    .about__foto {
+      margin-bottom: 3rem;
+      width: 45%; }
+    .about__title {
+      font-size: 3.5rem; }
+    .about__text {
+      font-size: 2rem; }
+  .skills {
+    padding-top: 20%; }
+    .skills__title {
+      font-size: 3rem; }
+    .skills__section {
+      margin-bottom: 3rem; }
+    .skills__artikle {
+      width: 24%; }
+    .skills__name {
+      font-size: 1.5rem; }
+  .portfolio {
+    padding-top: 20%; }
+    .portfolio__title {
+      margin-top: 0;
+      font-size: 2.5rem; }
+  .contact {
+    padding-top: 10%;
+    min-height: 89vh; }
+    .contact__title {
+      font-size: 2.5rem; }
+    .contact__box {
+      margin: 3rem;
+      text-align: center; }
+    .contact__inform {
+      font-size: 2.5rem; }
+    .contact__link {
+      padding: 0.5rem;
+      color: black; }
+  #contact__img {
+    font-size: 5rem; }
+  #link__img {
+    font-size: 7rem; }
+  .footer {
+    font-size: 1.2rem; } }

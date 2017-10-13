@@ -1,0 +1,172 @@
+body {
+  min-width: 20rem; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  width: 100%;
+  border-bottom: 0.1rem solid black; }
+
+/*----- header -----
+------------------*/
+.header {
+  position: fixed;
+  min-width: 20rem;
+  background-color: black; }
+  .header .nav__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem; }
+    .header .nav__head .head__logo {
+      display: block;
+      max-width: 80%;
+      text-decoration: none;
+      font-size: 1.6rem;
+      color: #fff;
+      font-family: 'Linux Biolinum', Arial, sans-serif; }
+    .header .nav__head .toggle {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 2.5rem;
+      height: 2rem;
+      background-color: #000; }
+      .header .nav__head .toggle__img {
+        position: relative;
+        display: block;
+        width: 2rem;
+        height: 0.0625rem;
+        transition: background-color 0.30s;
+        background-color: #fff; }
+        .header .nav__head .toggle__img:before, .header .nav__head .toggle__img:after {
+          position: absolute;
+          content: '';
+          display: block;
+          width: 2rem;
+          height: 0.0625rem;
+          transition: top 0.25s, transform 0.35s;
+          border-color: green;
+          background-color: #fff; }
+        .header .nav__head .toggle__img:before {
+          left: 0;
+          top: -.5rem; }
+        .header .nav__head .toggle__img:after {
+          left: 0;
+          top: 0.5rem; }
+      .header .nav__head .toggle:hover .toggle__img {
+        background-color: transparent; }
+        .header .nav__head .toggle:hover .toggle__img:before {
+          top: 0;
+          transform: rotateZ(45deg); }
+        .header .nav__head .toggle:hover .toggle__img:after {
+          top: 0;
+          transform: rotateZ(-45deg); }
+  .header .navbar {
+    display: none;
+    margin: 0;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    text-align: right; }
+    .header .navbar__item {
+      list-style-type: none; }
+      .header .navbar__item .navbar__link {
+        text-decoration: none;
+        line-height: 2.5rem;
+        color: #fff;
+        font-family: 'Linux Biolinum', Arial, sans-serif; }
+  .header .active {
+    display: block; }
+
+/*------ header end ------
+------------------------*/
+/*----- main -----
+----------------*/
+.page__content {
+  min-width: 20rem;
+  font-family: 'Linux Biolinum', Arial, sans-serif;
+  font-size: 1.6rem; }
+  .page__content .home {
+    padding-top: 10rem;
+    min-height: 100vh;
+    text-align: center;
+    color: #fff;
+    background-color: #336666;
+    background-image: url(../img/about-wallpapers.jpg);
+    background-size: cover; }
+  .page__content .about {
+    padding-top: 2.5rem;
+    min-height: 100vh;
+    text-align: center;
+    background-color: #fff; }
+    .page__content .about__foto {
+      width: 10rem;
+      border-radius: 1rem; }
+    .page__content .about__text {
+      text-align: justify;
+      font-size: 1.2rem; }
+  .page__content .skills {
+    min-height: 100vh;
+    background-color: #fff; }
+    .page__content .skills__title {
+      margin: auto;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      width: 80%;
+      text-align: center;
+      border: 0.1rem solid black; }
+    .page__content .skills__section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      .page__content .skills__section .skills__artikle {
+        margin: 0 0 2rem 0;
+        width: 30%;
+        text-align: center; }
+        .page__content .skills__section .skills__artikle .skills__img {
+          width: 4rem;
+          border-radius: 50%;
+          background-color: black; }
+        .page__content .skills__section .skills__artikle .skills__name {
+          font-size: 1rem; }
+  .page__content .portfolio {
+    min-height: 100vh;
+    background-color: #fff; }
+    .page__content .portfolio__title {
+      text-align: center; }
+  .page__content .contact {
+    min-height: 100vh;
+    background-color: #fff; }
+    .page__content .contact__title {
+      margin-top: 1rem;
+      font-weight: 500; }
+    .page__content .contact__box {
+      text-align: center; }
+      .page__content .contact__box .contact__inform {
+        margin-top: 0; }
+        .page__content .contact__box .contact__inform--none-space {
+          margin: 0; }
+        .page__content .contact__box .contact__inform__link {
+          padding: 0.5rem;
+          color: black; }
+
+.footer {
+  min-width: 20rem;
+  text-align: center;
+  font-family: 'Linux Biolinum', Arial, sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  background-color: black; }
+  .footer__text {
+    margin: 0;
+    padding: 1rem; }
+
+@media all and (min-width: 1366px) and (max-width: 1920px) {
+  .navbar {
+    display: inline-block; } }

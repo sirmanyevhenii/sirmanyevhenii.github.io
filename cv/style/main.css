@@ -1,0 +1,233 @@
+body {
+  min-width: 20rem; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+.container {
+  padding: 1rem;
+  border-bottom: 0.1rem solid #000; }
+
+/*----- header -----
+------------------*/
+.header {
+  width: 100%;
+  padding: 0.7rem;
+  position: fixed;
+  min-width: 20rem;
+  background-color: #000; }
+
+.nav__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem; }
+
+.head__logo {
+  display: block;
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #fff;
+  font-family: 'Linux Biolinum', Arial, sans-serif; }
+
+.toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2rem;
+  background-color: #000;
+  cursor: pointer; }
+  .toggle__img {
+    position: relative;
+    display: block;
+    width: 2.5rem;
+    height: 0.125rem;
+    transition: background-color 0.30s;
+    background-color: #fff; }
+    .toggle__img:before, .toggle__img:after {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 2.5rem;
+      height: 0.125rem;
+      transition: top 0.25s, transform 0.35s;
+      background-color: #fff; }
+    .toggle__img:before {
+      left: 0;
+      top: -.5rem; }
+    .toggle__img:after {
+      left: 0;
+      top: 0.5rem; }
+  .toggle.active .toggle__img {
+    background-color: transparent; }
+    .toggle.active .toggle__img:before {
+      top: 0;
+      transform: rotateZ(45deg); }
+    .toggle.active .toggle__img:after {
+      top: 0;
+      transform: rotateZ(-45deg); }
+
+.navbar {
+  display: none;
+  margin: 0;
+  padding: 0.5rem;
+  height: 90vh;
+  font-size: 1.5rem;
+  text-align: right; }
+  .navbar__item {
+    position: relative;
+    width: 48%;
+    height: 30%;
+    text-align: center;
+    background-color: #fff;
+    list-style-type: none; }
+  .navbar__link {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    right: 0;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Linux Biolinum', Arial, sans-serif; }
+  .navbar__item--home {
+    width: 100%; }
+  .navbar__active {
+    padding-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around; }
+
+/*------ header end ------
+------------------------*/
+/*----- main -----
+----------------*/
+.page__content {
+  min-width: 20rem;
+  width: 100%;
+  font-family: 'Linux Biolinum', Arial, sans-serif;
+  font-size: 1.6rem; }
+
+.home {
+  padding-top: 6em;
+  min-height: 100vh;
+  width: 100%;
+  text-align: center;
+  color: #000; }
+  .home__name {
+    margin: 1rem;
+    font-size: 2.3rem; }
+  .home__jobtitle {
+    margin: 0;
+    padding-bottom: 1rem; }
+  .home__img {
+    width: 100%; }
+
+.side {
+  display: none;
+  padding: 3rem;
+  width: 50%;
+  background-color: #D3D3D3; }
+  .side__title {
+    margin: 0;
+    display: block;
+    font-size: 5rem;
+    color: #fff; }
+
+.about {
+  padding-top: 6rem;
+  min-height: 100vh;
+  text-align: center;
+  background-color: #fff; }
+  .about__foto {
+    width: 65%;
+    border-radius: 1rem; }
+  .about__title {
+    margin: 1rem; }
+  .about__text {
+    margin-bottom: 0;
+    text-align: justify;
+    text-indent: 1.5rem;
+    font-size: 1.2rem; }
+
+.skills {
+  padding-top: 6rem;
+  min-height: 100vh;
+  background-color: #fff; }
+  .skills__title {
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+    width: 90%;
+    text-align: center;
+    border: 0.1rem solid black; }
+  .skills__section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .skills__artikle {
+    margin: 0 0 2rem 0;
+    width: 30%;
+    text-align: center; }
+  .skills__img {
+    width: 50%;
+    border-radius: 50%;
+    background-color: black; }
+  .skills__name {
+    font-size: 1rem; }
+
+.portfolio {
+  padding-top: 6rem;
+  min-height: 100vh;
+  background-color: #fff; }
+  .portfolio__title {
+    text-align: center; }
+
+.contact {
+  padding-top: 5rem;
+  min-height: 100vh;
+  background-color: #fff; }
+  .contact__title {
+    margin-top: 0;
+    text-align: center; }
+  .contact__box {
+    margin-bottom: 1rem;
+    text-align: center; }
+  .contact__inform {
+    margin: 0; }
+    .contact__inform--none-space {
+      margin: 0; }
+  .contact__link {
+    padding: 0.5rem;
+    color: black; }
+
+#contact__img1 {
+  font-size: 4rem; }
+
+#contact__img2 {
+  font-size: 4rem; }
+
+#contact__img3 {
+  font-size: 4rem; }
+
+#link__img1 {
+  font-size: 5rem; }
+
+#link__img2 {
+  font-size: 5rem; }
+
+#link__img3 {
+  font-size: 5rem; }
+
+.footer {
+  min-width: 20rem;
+  text-align: center;
+  font-family: 'Linux Biolinum', Arial, sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  background-color: black; }
+  .footer__text {
+    margin: 0;
+    padding: 1rem; }
