@@ -27,14 +27,14 @@ a {
 	background-color: #000;
 }
 
-.nav__head {
+.nav-head {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 0.5rem;
 }
 
-.head__logo {
+.nav-head__logo {
 	display: block;
 	text-decoration: none;
 	font-size: 1.6rem;
@@ -142,7 +142,7 @@ a {
 /*----- main -----
 ----------------*/
 
-.page__content {
+.page-content {
 	min-width: 20rem;
 	width: 100%;
 	font-family: 'Linux Biolinum', Arial, sans-serif;
@@ -168,7 +168,7 @@ a {
 	}
 }
 
-.side {
+.aside {
 	display: none;
 	padding: 3rem;
 	width: 50%;

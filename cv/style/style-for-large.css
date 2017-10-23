@@ -6,7 +6,7 @@
   .nav {
     display: flex;
     justify-content: space-between; }
-  .nav__head {
+  .nav-head {
     display: inline-block; }
   .toggle {
     display: none; }
@@ -62,21 +62,21 @@
     padding-left: 3rem;
     padding-right: 3rem;
     width: 50%; }
-  .side {
+  .aside {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #000; }
-    .side__title {
+    .aside__title {
       text-align: center;
       width: 60%;
       margin-bottom: 1em; }
-    .side__img {
+    .aside__img {
       width: 30%; }
-    .side--left {
+    .aside--left {
       border-radius: 0 50% 50% 0; }
-    .side--right {
+    .aside--right {
       border-radius: 50% 0 0 50%; }
   .about {
     padding: 0; }
