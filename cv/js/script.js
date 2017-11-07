@@ -1,4 +1,4 @@
-// 'use strict';
+'use strict';
 
 $('.toggle').click(function() {
 	$('.navbar') .toggleClass('navbar__active');
