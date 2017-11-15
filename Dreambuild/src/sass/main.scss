@@ -521,12 +521,13 @@ body {
 }
 
 .footer {
-	display: flex;
-	justify-content: space-between;
-	padding: 1rem 3rem;
+	// display: flex;
+	// justify-content: space-between;
+	// padding: 1rem 3rem;
 	background-color: #191919; 
 	.licence {
 		padding: 1rem;
+		font-size: 0.875rem;
 		color: #4c4c4c;
 	}
 	.contacts-list {
@@ -543,9 +544,41 @@ body {
 	}
 }
 
-@media screen and (max-width: 719px) and (min-width: 320px) {
+@media screen and (max-width: 959px) and (min-width: 768px) {
+  .header-slogan__text {
+  	font-size: 6rem;
+  }
+	
+	.main {
+	  .title {
+	  	font-size: 4rem;
+	  }
+	}
+}
+
+@media screen and (max-width: 767px) and (min-width: 320px) {
   .header-slogan__text {
   	font-size: 5rem;
   }
+
+	.main {
+	  .title {
+	  	font-size: 2rem;
+	  }
+
+	  .section-menu {
+	  	padding-top: 8rem;
+	  	margin-bottom: 2rem;
+	  	min-height: 50vh;
+	  }
+
+	  .we-work__text {
+	  	width: 100%;
+	  }
+	}
+
+ //  .we-work-numbers {
+	// 	margin-bottom: 5rem;
+	// }
 }
 
