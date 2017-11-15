@@ -5,7 +5,7 @@ body {
   position: relative;
   padding: 5.125rem 3.125rem 5.625rem;
   height: 100vh;
-  background: url(../img/header.jpg) no-repeat center top fixed;
+  background: url(../img/header-min.jpg) no-repeat center top fixed;
   background-size: cover; }
   .header:after {
     content: ' ';
