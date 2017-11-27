@@ -109,11 +109,11 @@ body {
     min-height: 100vh;
     text-align: center;
     position: relative; }
-    .main .we-work:before {
+    .main .we-work:after {
       content: ' ';
       position: absolute;
       right: 50%;
-      bottom: 5.625rem;
+      bottom: 0;
       display: block;
       width: 2px;
       height: 11.25rem;
@@ -152,6 +152,12 @@ body {
       display: flex;
       margin-bottom: 5rem;
       visibility: hidden; }
+      .main .what-we-do__article-2 {
+        -webkit-animation-delay: 0.5s;
+                animation-delay: 0.5s; }
+      .main .what-we-do__article-3 {
+        -webkit-animation-delay: 1s;
+                animation-delay: 1s; }
   .main .article-galery {
     position: relative;
     width: 50%; }
@@ -191,7 +197,7 @@ body {
       display: block;
       position: absolute;
       bottom: -5px;
-      width: 120px;
+      width: 30%;
       height: 1px;
       background-color: #000; }
     .main .article-title--right:after {
@@ -200,13 +206,13 @@ body {
       position: absolute;
       bottom: -5px;
       right: 0;
-      width: 120px;
+      width: 30%;
       height: 2px;
       background-color: #000; }
   .main .process {
     position: relative;
     margin-bottom: 5.125rem;
-    height: 100vh; }
+    min-height: 100vh; }
     .main .process:before {
       content: ' ';
       position: absolute;
@@ -267,7 +273,9 @@ body {
   .main .customers-reviews {
     position: relative;
     margin-bottom: 10.25rem;
-    height: 100vh; }
+    padding: 0;
+    padding-bottom: 10rem;
+    min-height: 100vh; }
     .main .customers-reviews:before {
       content: ' ';
       position: absolute;
@@ -281,6 +289,8 @@ body {
       margin: 0;
       text-align: center;
       font-size: 5em; }
+    .main .customers-reviews .title-2 {
+      margin-bottom: 3rem; }
     .main .customers-reviews__img {
       width: 100%; }
     .main .customers-reviews .slider-controls {
@@ -367,31 +377,24 @@ body {
       margin: 3rem 0;
       color: #fff; }
     .main .contacts-form__media {
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      max-width: 22rem; }
       .main .contacts-form__media img {
         display: block; }
       .main .contacts-form__media a {
         color: #8c8c8c; }
-    .main .contacts-message .col-5 {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      -ms-flex-line-pack: justify;
-          align-content: space-between; }
     .main .contacts-message__send {
       border: none;
       border-bottom: 1px solid #8c8c8c;
       background-color: #212121;
       padding-top: 1rem; }
-    .main .contacts-message .col-7 {
-      margin-top: 2rem;
-      padding: 0;
+    .main .contacts-message__textarea-box {
+      margin-top: 2rem; }
+    .main .contacts-message__textarea-border {
+      position: relative;
       border-top: 1px solid #8c8c8c;
-      border-bottom: 1px solid #8c8c8c;
-      position: relative; }
-      .main .contacts-message .col-7:before {
+      border-bottom: 1px solid #8c8c8c; }
+      .main .contacts-message__textarea-border:before {
         content: ' ';
         position: absolute;
         right: 1rem;
@@ -401,7 +404,7 @@ body {
         height: 2.3rem;
         background-image: url(../img/textarea.png);
         background-repeat: no-repeat; }
-      .main .contacts-message .col-7:after {
+      .main .contacts-message__textarea-border:after {
         content: ' ';
         position: absolute;
         right: 0;
@@ -433,28 +436,81 @@ body {
     padding: 1rem;
     font-size: 0.875rem;
     color: #4c4c4c; }
-  .footer .contacts-list__item {
-    display: inline-block;
-    padding: 1rem; }
-  .footer .contacts-list__icon {
-    color: #8c8c8c; }
-    .footer .contacts-list__icon:hover {
-      color: #fff; }
+  .footer .contacts-list {
+    text-align: right; }
+    .footer .contacts-list__item {
+      display: inline-block;
+      padding: 1rem; }
+    .footer .contacts-list__icon {
+      color: #8c8c8c; }
+      .footer .contacts-list__icon:hover {
+        color: #fff; }
 
-@media screen and (max-width: 959px) and (min-width: 768px) {
+@media screen and (max-width: 1199px) and (min-width: 768px) {
   .header-slogan__text {
     font-size: 6rem; }
   .main .title {
-    font-size: 4rem; } }
+    font-size: 4rem; }
+  .main .contacts__text {
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 80%; }
+  .main .customers-reviews {
+    padding-bottom: 10rem; } }
 
 @media screen and (max-width: 767px) and (min-width: 320px) {
+  .header__logo {
+    margin-bottom: 4rem; }
   .header-slogan__text {
-    font-size: 5rem; }
+    font-size: 2.5rem; }
   .main .title {
     font-size: 2rem; }
   .main .section-menu {
     padding-top: 8rem;
-    margin-bottom: 2rem;
-    min-height: 50vh; }
+    margin-bottom: 2rem; }
+  .main .we-work:before {
+    bottom: 0; }
   .main .we-work__text {
-    width: 100%; } }
+    width: 100%; }
+  .main .we-work {
+    padding-bottom: 15rem;
+    margin-bottom: 5rem; }
+  .main .process {
+    padding-bottom: 15rem; }
+    .main .process-illustration-box {
+      max-width: 51%; }
+      .main .process-illustration-box--ar:after, .main .process-illustration-box--ar:before {
+        position: absolute;
+        bottom: 1rem;
+        right: 44%;
+        -webkit-transform: rotateZ(-45deg);
+            -ms-transform: rotate(-45deg);
+                transform: rotateZ(-45deg); }
+      .main .process-illustration-box--ar:after {
+        right: calc(44% + 10px);
+        -webkit-transform: rotateZ(45deg);
+            -ms-transform: rotate(45deg);
+                transform: rotateZ(45deg); }
+  .main .article-title {
+    font-size: 1rem; }
+  .main .article-galery__link {
+    padding: 0;
+    width: 5rem; }
+  .main .customers-reviews {
+    padding-bottom: 10rem; }
+  .main .customers-reviews-content {
+    padding: 1rem; }
+  .main .clients-item {
+    padding: 2rem; }
+  .main .clients__text {
+    margin: 1rem 0; }
+  .main .contacts {
+    padding-bottom: 5rem; }
+  .main .contacts-message__send {
+    margin-bottom: 1rem;
+    width: 100%; }
+  .main .contacts-message__textarea-border {
+    border: 1px solid #8c8c8c; }
+  .footer .contacts-list {
+    text-align: left; } }

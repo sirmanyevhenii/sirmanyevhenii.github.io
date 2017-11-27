@@ -14,20 +14,21 @@
 		event.stopPropagation();
 	});
 
+
 	// scroll add elements
 	$(document).ready(function(){
 	var h = $(window).height();
 	
 	$(window).scroll(function(){
-		if ( ($(this).scrollTop()+h) >= $(".article-title-1").offset().top) {
+		if ( ($(this).scrollTop()+h) >= $(".what-we-do__title").offset().top) {
 			$(".what-we-do__article-1").css({visibility:"visible"});
 			$(".what-we-do__article-1").addClass('animated bounceInLeft');
 		} 
-		if ( ($(this).scrollTop()+h) >= $(".article-title-2").offset().top) {
+		if ( ($(this).scrollTop()+h) >= $(".what-we-do__title").offset().top) {
 			$(".what-we-do__article-2").css({visibility:"visible"});
 			$(".what-we-do__article-2").addClass('animated bounceInRight');
 		} 
-		if ( ($(this).scrollTop()+h) >= $(".article-title-3").offset().top) {
+		if ( ($(this).scrollTop()+h) >= $(".what-we-do__title").offset().top) {
 			$(".what-we-do__article-3").css({visibility:"visible"});
 			$(".what-we-do__article-3").addClass('animated bounceInLeft');
 		} 
@@ -39,6 +40,7 @@
 		}
 	});
 });
+
 
 // slider
 $('.carousel').carousel({ interval: false });
