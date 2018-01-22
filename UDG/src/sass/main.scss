@@ -1,3 +1,7 @@
+* {
+	 outline: none;
+}
+
 body {
 	min-width: 20rem;
 	font-family: 'acromextrabold', 'Roboto', sans-serif;
@@ -56,6 +60,7 @@ body {
 			padding: 0.4rem;
 			margin: 0 1rem;
 			border: 1px solid #bfd730;
+			cursor: pointer;
 
 			&:after {
 				position: absolute;
@@ -221,6 +226,7 @@ body {
 
 .menu-active {
 	background-image: url('../img/open-menu.jpg');
+	z-index: 1001;
 }
 
 input[type="search"]::-webkit-input-placeholder { color: #fff; }
@@ -257,13 +263,6 @@ input[type="search"]::placeholder { color: #fff; }
 .slider-controls {
 	font-family: 'Roboto Light', sans-serif;
 
-	&__arrows {
-		border: none;
-		color: #b1c7c6;
-		display: inline-block;
-		background-color: transparent;
-	}
-
 	&__numbers {
 		display: inline-block;
 		padding: 0 2rem;
@@ -284,6 +283,8 @@ input[type="search"]::placeholder { color: #fff; }
 	position: absolute;
 	top: 3.80rem;
 	color: #ecf0e8;
+	z-index: 1000;
+	cursor: pointer;
 }
 
 .custom {
@@ -554,6 +555,7 @@ input[type="search"]::placeholder { color: #fff; }
 			color: #fff;
 			font-family: 'acromextrabold', 'Roboto', sans-serif;
 			background-color: #439c92;
+			cursor: pointer;
 		}
 	}
 }
