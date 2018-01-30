@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>TABS</title>
+
+	<!-- Required meta tags -->
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="theme-color" content="#1a58bc">
+	<meta property="og:type" content="Website">
+	<meta name="keywords" content="kyiv, lviv">
+
+	<!-- Favikon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+	<link rel="manifest" href="favicons/manifest.json">
+	<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#317EFB">
+
+  <!-- Style -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+
+ 	<!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<div class="tabs-screen">
+			<h1 class="tabs-screen__title">Get in touch</h1>
+			<ul class="nav nav-tabs" id="myTab" role="tablist">
+			  <li class="nav-item">
+			    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Tab1</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Tab2</a>
+			  </li>
+			</ul>
+
+			<form class="tab-content" id="myTabContent">
+			  <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="home-tab">
+		  		<div class="form-row">
+					  <div class="form-group col-12 col-lg">
+					    <label for="name">Name</label>
+					    <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Enter your name" pattern="^[a-zA-Z\s]+$" title="This field should contain only letters and spaces." required>
+					    <small id="nameHelp" class="form-text text-muted">This field should contain only letters (and spaces).</small>
+					  </div>
+					  <div class="form-group col-12 col-lg">
+					    <label for="email">Email address</label>
+					    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" pattern=".+@outlook.com|.+@gmail.com" title="We'll accept only emails from gmail.com and outlook.com." required>
+					    <small id="emailHelp" class="form-text text-muted">We'll accept only emails from gmail.com and outlook.com.</small>
+					  </div>
+		  		</div>
+
+				 	<div class="form-row">
+				    <div class="col-12 col-lg mb-3">
+				      <label for="city">City</label>
+				      <input type="text" class="form-control" id="city" placeholder="City" required>
+				      <div class="invalid-feedback">
+				        Please provide a valid city.
+				      </div>
+				    </div>
+				    <div class="col-12 col-lg mb-3">
+				      <label for="state">State</label>
+				      <input type="text" class="form-control" id="state" placeholder="State" required>
+				      <div class="invalid-feedback">
+				        Please provide a valid state.
+				      </div>
+				    </div>
+			  	</div>
+					<button type="reset" class="btn btn-primary">Reset</button>
+					<button type="button" class="btn btn-primary">Example</button>
+			  </div>
+
+			  <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="profile-tab">
+				  <div class="form-group">
+				    <label for="textarea">Example textarea</label>
+				    <textarea class="form-control" id="textarea" rows="3" minlength="5" maxlength="300" required></textarea>
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleFormControlFile1">Example file input</label>
+				    <input type="file" class="form-control-file" id="img" onchange="readURL(this);">
+				    <img id="blah" class="upload-img" src="#" alt="your image">
+				  </div>
+			  </div>
+			  <button type="submit" id="submit-btn" class="btn btn-primary btn-lg" form="myTabContent" data-toggle="modal" data-target="#exampleModalCenter">Submit</button>
+			</form>
+		</div>
+
+<!-- 		<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLongTitle">Hello, I have message for you</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+						
+		    	</div>
+		  	</div>
+			</div>
+		</div> -->
+	</div>
+
+
+
+
+
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<!-- My JavaScript -->
+	<script defer src="js/common.js"></script>
+
+</body>
+</html>
