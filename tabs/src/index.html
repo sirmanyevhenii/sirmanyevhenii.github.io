@@ -22,6 +22,9 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 
+	<!-- Fonts -->
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
  	<!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -83,16 +86,82 @@
 				    <textarea class="form-control" id="textarea" rows="3" minlength="5" maxlength="300" required></textarea>
 				  </div>
 				  <div class="form-group">
-				    <label for="exampleFormControlFile1">Example file input</label>
+				    <label for="img">Example file input</label>
 				    <input type="file" class="form-control-file" id="img" onchange="readURL(this);">
-				    <img id="blah" class="upload-img" src="#" alt="your image">
+				    <img class="blah upload-img" src="#" alt="your image">
 				  </div>
 			  </div>
-			  <button type="submit" id="submit-btn" class="btn btn-primary btn-lg" form="myTabContent" data-toggle="modal" data-target="#exampleModalCenter">Submit</button>
+			  <button type="submit" id="submit-btn" class="btn btn-primary btn-lg" form="myTabContent" data-toggle="modal">Submit</button>
+			</form>
+		</div>
+		<i class="fas fa-arrow-down fa-5x"></i>
+		<!-- <i class="fas fa-arrows-alt-v fa-5x"></i> -->
+	</div>
+
+	<div class="wrapper">
+
+		<div class="tabs-screen">
+			<h1 class="tabs-screen__title">Get in touch</h1>
+			<ul class="nav nav-tabs" id="myTab-1" role="tablist">
+			  <li class="nav-item">
+			    <a class="nav-link active" id="home-tab-1" data-toggle="tab" href="#tab1-1" role="tab" aria-controls="tab1" aria-selected="true">Tab1</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" id="profile-tab-1" data-toggle="tab" href="#tab2-1" role="tab" aria-controls="tab2" aria-selected="false">Tab2</a>
+			  </li>
+			</ul>
+
+			<form class="form-1 tab-content" id="myTabContent-1">
+			  <div class="tab-pane fade show active" id="tab1-1" role="tabpanel" aria-labelledby="home-tab">
+		  		<div class="form-row">
+					  <div class="form-group col-12 col-lg">
+					    <label for="name-1">Name</label>
+					    <input type="text" class="form-control" id="name-1" aria-describedby="nameHelp" placeholder="Enter your name">
+					    <small id="nameHelp-1" class="form-text text-muted">This field should contain only letters (and spaces).</small>
+					  </div>
+					  <div class="form-group col-12 col-lg">
+					    <label for="email-1">Email address</label>
+					    <input type="email" class="form-control" id="email-1" aria-describedby="emailHelp" placeholder="Enter email">
+					    <small id="emailHelp-1" class="form-text text-muted">We'll accept only emails from gmail.com and outlook.com.</small>
+					  </div>
+		  		</div>
+
+				 	<div class="form-row">
+				    <div class="col-12 col-lg mb-3">
+				      <label for="city-1">City</label>
+				      <input type="text" class="form-control" id="city-1" placeholder="City">
+				      <div class="invalid-feedback">
+				        Please provide a valid city.
+				      </div>
+				    </div>
+				    <div class="col-12 col-lg mb-3">
+				      <label for="state-1">State</label>
+				      <input type="text" class="form-control" id="state-1" placeholder="State">
+				      <div class="invalid-feedback">
+				        Please provide a valid state.
+				      </div>
+				    </div>
+			  	</div>
+					<button type="reset" class="btn btn-primary">Reset</button>
+					<button type="button" class="btn btn-primary">Example</button>
+			  </div>
+
+			  <div class="tab-pane fade" id="tab2-1" role="tabpanel" aria-labelledby="profile-tab">
+				  <div class="form-group">
+				    <label for="textarea-1">Example textarea</label>
+				    <textarea class="form-control" id="textarea-1" rows="3"></textarea>
+				  </div>
+				  <div class="form-group">
+				    <label for="img-1">Example file input</label>
+				    <input type="file" class="form-control-file" id="img-1" onchange="readURL(this);">
+				    <img class="blah upload-img" src="#" alt="your image">
+				  </div>
+			  </div>
+			  <button type="submit" id="submit-btn-1" class="btn btn-primary btn-lg" form="myTabContent-1" data-toggle="modal" data-target="#exampleModalCenter">Submit</button>
 			</form>
 		</div>
 
-<!-- 		<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="myTabContent-1" aria-hidden="true" data-toggle="myTabContent-1">
 		  <div class="modal-dialog modal-dialog-centered" role="document">
 		    <div class="modal-content">
 		      <div class="modal-header">
@@ -105,11 +174,8 @@
 		    	</div>
 		  	</div>
 			</div>
-		</div> -->
+		</div>
 	</div>
-
-
-
 
 
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
