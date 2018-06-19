@@ -2,11 +2,11 @@
 // GENERAL
 
 * {
-  box-sizing: border-box;
   font-family: 'Linux Biolinum';
 }
 
 body {
+	margin: 0;
 	min-width: 20rem;
 }
 
@@ -259,8 +259,12 @@ a {
 	min-height: 100vh;
 	text-align: center;
 	text-transform: uppercase;
-	&-caption {
+	&-title {
 		color: #800000;
+	}
+	&-caption {
+		color: black;
+		// font-size: 1.5rem;
 	}
 }
 

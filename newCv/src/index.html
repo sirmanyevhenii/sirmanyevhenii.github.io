@@ -26,7 +26,6 @@
 	<meta name="theme-color" content="#ffffff">
 
   <!-- Style -->
-	<link rel="stylesheet" href="sass/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 
 	<!-- Fonts -->
@@ -215,7 +214,7 @@
 						</div>
 						<div class="portfolio-wrap__work portfolio-wrap__work--newCv">
 							<h3 class="portfolio-wrap__title">My new CV</h3>
-							<a href="https://sirmanyevhenii.github.io/newCv" class="portfolio-wrap__link" target="_blank"><img class="portfolio-wrap__img" src="img/newCV.jpg" alt=""></a>
+							<a href="https://sirmanyevhenii.github.io/newCv/dist" class="portfolio-wrap__link" target="_blank"><img class="portfolio-wrap__img" src="img/newCV.jpg" alt=""></a>
 						</div>
 					</div>
 				</div>
@@ -224,8 +223,9 @@
 			<!-- BEGIN CONTACTS -->
 
 			<section id="contacts" class="contacts">
+				<h1 class="contacts-title">contacts:</h1>
 				<div class="contacts__table">
-					<h1 class="contacts-caption">contacts:</h1>
+					<h2 class="contacts-caption">my contacts:</h2>
 					<div class="contact">
 						<p class="contact__title">If you have any question - welcome to contact me here:</p>
 						<div class="contact__box">
@@ -255,11 +255,11 @@
 				</div>
 
 				<div class="contacts__table">
-					<h1 class="contacts-caption">text me:</h1>
+					<h2 class="contacts-caption">text me:</h2>
 					<form action="https://formspree.io/sirmanj92@gmail.com" method="POST" class="message" target="_blank">
-						<label for="" class="message__fild"><span class="message__fild-name">*your name</span><input type="text" name="name" class="message__input" placeholder="Your name"></label>
-						<label for="" class="message__fild"><span class="message__fild-name">*your email</span><input type="email" name="_replyto" class="message__input" placeholder="Your email"></label>
-						<label for="" class="message__fild"><span class="message__fild-name">*your message</span><textarea name="message" placeholder="Your message" class="message__input" rows="5"></textarea></label>
+						<label for="form-name" class="message__fild"><span class="message__fild-name">*your name</span><input id="form-name" type="text" name="name" class="message__input" placeholder="Your name"></label>
+						<label for="form-email" class="message__fild"><span class="message__fild-name">*your email</span><input id="form-email" type="email" name="_replyto" class="message__input" placeholder="Your email"></label>
+						<label for="form-message" class="message__fild"><span class="message__fild-name">*your message</span><textarea id="form-message" name="message" placeholder="Your message" class="message__input" rows="5"></textarea></label>
 						<input type="submit" class="message__button" value="Send">
 					</form>
 				</div>
