@@ -242,6 +242,8 @@ a {
   text-align: center;
   color: #888;
   background-color: #222; }
+  .footer__text {
+    background-color: inherit; }
 
 .contact__link--footer {
   padding: 0.5rem 0.25rem;

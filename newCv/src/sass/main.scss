@@ -308,6 +308,9 @@ a {
 	text-align: center;
   color: #888;
   background-color: #222;
+  &__text {
+  	background-color: inherit;
+  }
 }
 
 .contact__link--footer {
